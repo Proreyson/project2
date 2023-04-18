@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+/* Header Section */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(230, 205, 161, 0.7), rgba(180, 145, 48, 0.7)), url(Images/banner.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 250px;
+   
+    
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #7A4116;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #3d3d3d;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #7A4116;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; 
+}
+
+.text-box h1 {
+    font-size: 80px;
+}
+
+.text-box p {
+    margin: 20px 0 20px;
+    font-size: 40px;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+    .text-box h1 {
+        font-size: 45px;
+    }
+    .text-box p {
+        font-size: 20px;
+    }
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: rgb(182, 138, 57);
+        height: 30;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+    .nav-links ul li a {
+        font-size: 15px;
+    }
+  
+    .nav-links ul {
+        padding: 30px;
+    }
+}
+
+
+.container {
+    background-color: wheat;
+}
+
+
+/* Motto section */
+
+.motto {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    padding-top: 7%;
+    padding-bottom: 5%;
+}
+
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.col-motto {
+    flex-basis: 27%;
+    background: #f0ddc1;
+    border-radius: 15px;
+    padding: 20px 12px;
+    box-sizing: border-box; 
+    transition: 0.5s;
+}
+
+.col-motto:hover {
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+    color: #7A4116;
+}
+
+.col-motto p {
+    color: #806565;
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 700px)  {
+    .row {
+        flex-direction: column;
+    }
+}
+
+/* Product Section */
+
+.product {
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 5%;
+    
+}
+.col-product {
+    flex-basis: 27%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.col-product img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+
+.top-img {
+    width: 80%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: all .7s ease;
+}
+.top-img:hover {
+    opacity: 1;
+    height: 100%;
+}
+
+@media screen and (max-width:700px) {
+    .product {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/* Barista section */
+
+.barista {
+    background-color: #e5e5e5;
+    border-radius: 20px;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+  
+    
+}
+.col-barista {
+    flex-basis: 27%;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.col-barista img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+    opacity: 0.10;
+    transition: 0.5s;
+}
+
+.col-barista img:hover {
+    opacity: 1.0;
+    border-radius: 100%
+
+}
+
+@media screen and (max-width:700px) {
+    .barista {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* Costumer Says Product */
+
+.costumer {
+    width: 80%;
+    margin: auto;
+    padding: 50px;
+    text-align: center;
+   
+}
+
+.col-costumer {
+    flex-basis: 45%;
+    border-radius: 10px;
+    text-align: left;
+    background: #e5e5e5;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.col-costumer img {
+    height: 75px;
+   
+   
+    border-radius: 50%;
+    
+}
+
+.col-costumer p {
+    padding: 0;
+ 
+}
+
+.col-costumer h6 {
+    margin-top: 15px;
+    text-align: left;
+}
+
+.col-costumer .fa-solid {
+    color: gold;
+    position: relative;
+    margin-top: 5px;
+
+}
+
+@media  screen and (max-width: 1300px) {
+    .col-costumer {
+        flex-basis: 40%;
+    }
+    .col-costumer img {
+        height: 50px;  
+    } 
+    .costumer {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+    .col-costumer img {
+        height: 50px;
+        margin-left: 7px;
+        margin-right: 7px;
+    } 
+    .costumer {
+        width: 65%; 
+    }
+
+    .col-costumer {
+        margin-bottom: 5%;
+    }
+}
+
+
+/* ABOUT US SECTION */
+
+
+.about {
+    margin: 30px;
+    text-align: center;
+}
+
+.about-us {
+    margin: 100px auto;
+    width: 70%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(Images/logo-removebg-preview.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    border-radius: 10px;
+    text-align: center;
+    padding: 100px 0;
+    color: #fff;
+}
+
+
+
+
