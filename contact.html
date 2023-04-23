@@ -21,36 +21,101 @@
     <title>Contact</title>
   </head>
 
-
   <body>
+    <!-- Header Section -->
     <section class="sub-header">
       <nav>
-        <a href="index.html"><img src="assets/Images/logo-removebg-preview.png" /></a>
-        <div class="nav-links">
+        <a href="index.html"
+          ><img src="assets/Images/logo-removebg-preview.png"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
           <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+            <li>
+              <a class="fw-bold text-white" href="contact.html">Contact</a>
+            </li>
           </ul>
         </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
       </nav>
-      <h1>Contact Us</h1>
+      <h1>Contact us</h1>
     </section>
 
-       <!-- <section class="footer"> -->
-              <!-- <div class="icon"> -->
-                  <!-- <a href="https://www.facebook.com/Nayonscoffee"><i class="fa-brands fa-facebook-f"></i></i></a> -->
-                  <!-- <a href="#"><i class="fa-brands fa-instagram"></i></a> -->
-                  <!-- <a href="#"><i class="fa-brands fa-twitter"></i></a> -->
-                  <!-- <a href="index.html"><i class="fa-solid fa-arrow-up"></i></a> -->
-              <!-- </div> -->
-        <!-- </section> -->
+    <!-- main content -->
+    <section class="location">
+      <div class="row">
+        <div class="column">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d967.4771356927212!2d121.18505787598274!3d14.082575897746207!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd68a6e4924395%3A0x9c696dad3e93ea95!2sTYA%20ANNIE%20SABON%20SUPPLIES%20TRADING!5e0!3m2!1sen!2sph!4v1681915663284!5m2!1sen!2sph"
+            width="600"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
 
+    <section class="contact-us">
+      <div class="row">
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-house"></i>
+            <span>
+              <h5>187 Purok 2 Heaven Street</h5>
+              <p>San Pablo Sto Tomas Batangas</p>
+            </span>
+          </div>
+        </div>
 
-   
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-phone"></i>
+            <span>
+              <h5>+63 920 537 6504</h5>
+              <p>Monday to Saturday, 3PM to 10PM</p>
+            </span>
+          </div>
+        </div>
 
+        <div class="contact-col">
+          <div>
+            <i class="fa-solid fa-envelope"></i>
+            <span>
+              <h5>NayonsCoffee@gmail.com</h5>
+              <p>Email us</p>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Footer section -->
+    <section class="footer">
+      <div class="icon">
+        <a href="https://www.facebook.com/Nayonscoffee"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        <a href="contact.html"><i class="fa-solid fa-arrow-up"></i></a>
+      </div>
+    </section>
 
+    <!-- Javascript toogle menu -->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
   </body>
 </html>
