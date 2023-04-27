@@ -232,11 +232,9 @@ h3 {
     height: auto;
     border-radius: 10px;
     display: block;
-    opacity: 0.10;
     transition: 0.5s;
 }
 .col-barista img:hover {
-    opacity: 1.0;
     border-radius: 100%
 }
 
@@ -362,6 +360,15 @@ h3 {
     margin: 0;
     padding: 0;
 }
+.buttonregister {
+    background-color: #7A4116;
+}
+.buttonregister:hover {
+    background-color: #7A4116;
+    
+}
+ 
+
 
 
 

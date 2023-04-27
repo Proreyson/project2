@@ -108,11 +108,11 @@
         <div class="row">
           <div class="col-md-8 border p-5 rounded">
             <form>
-              <div class="mb-3">
+              <div class="mb-3 md">
                 <label for="username" class="form-label">Username:</label>
                 <input type="text" class="form-control" id="username" required>
               </div>
-              <div class="mb-3">
+              <div class="mb-3 md">
                 <label for="email" class="form-label">Email address:</label>
                 <input type="email" class="form-control" id="email">               
               </div>
@@ -124,10 +124,109 @@
                   <input type="file" aria-describedby="fileHelp" accept=".docx, .doc, .xls, .png, .jpeg, .pdf, .webp,">
                   <div id="fileHelp" class="form-text">You can upload .doc, .doc, .xls, .png, .jpeg, .pdf, .webp</div>
               </div>
-              <button type="submit" class="btn btn-primary">Submit</button> <span> <button class="buttonregister btn btn-success"><a class="text-white text-decoration-none" href="Registration.html">Create account</a></button>
+              <button type="submit" class="btn btn-primary fs-5">Submit</button> <span> <button class="buttonregister btn fs-5" data-bs-toggle="modal" data-bs-target="#exampleModal"><a class="text-white text-decoration-none">Create account</a></button>
             </form>
           </div>
+                  
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel"></h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <main class="container" style="background-color: wheat; border: 1px solid black;">
+          <section class="row">
+      
+            <div class="col p-5">
+              <h5 class="m-1">Register Account:</h5>
+              <form class="border p-3" action="#">
+                <div class="row">
+                  <div class="col-6">
+                    <label for="firstName" class="form-label fw-medium p-2"
+                      >First Name:</label
+                    >
+                    <input type="text" class="form-control" id="firstName" />
+                  </div>
+                  <div class="col-6">
+                    <label for="lastName" class="form-label fw-medium p-2"
+                      >Last Name:</label
+                    >
+                    <input type="text" class="form-control" id="lastName" />
+                  </div>
+                </div>
+    
+                <div class="row">
+                  <div class="col-12">
+                    <label for="userName" class="form-label fw-medium p-2"
+                      >Username:</label
+                    >
+                    <div class="input-group mb-3">
+                      <span class="input-group-text">@</span>
+                      <input
+                        type="text"
+                        class="form-control"
+                        placeholder="Username"
+                        name="usrname"
+                        id="userName"
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label for="userEmail" class="form-email fw-medium p-2"
+                      >Email: <span class="text-secondary"></span></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      placeholder="you@example.com"
+                      id="userEmail"
+                    />
+                  </div>
+                  <div class="p-2 text-center">
+                    <label for="password" class="form-password fw-medium p-2"
+                      >Password:</label
+                    >
+                    <input type="password" class="form-password rounded-5 border" id="password" />
+                  </div>
+                  <div>
+                    <label for="city" class="form-label fw-medium p-2">City:</label>
+                    <input type="text" class="form-control" id="city" />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="province" class="form-label fw-medium p-2"
+                      >Province:</label
+                    >
+                    <select id="province" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>Sto Tomas</option>
+                      <option>Calamba</option>
+                      <option>Tanauan</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <label for="zip" class="form-label fw-medium p-2">Zip:</label>
+                    <input type="text" class="form-control sm-2" id="zip" />
+                  </div>
+                </div>
+                <hr />
+      
+                <hr />
+              </form>
+            </div>
+          </section>
+        </main>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="buttonregister btn text-white">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
 
           
          <!-- Contact Section -->
